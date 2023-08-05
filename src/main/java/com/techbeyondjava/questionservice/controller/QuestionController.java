@@ -10,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Objects;
 
 @RestController
 @RequestMapping("/question")
@@ -19,16 +18,6 @@ public class QuestionController {
 
     @Autowired
     QuestionService questionService;
-
-    @PostMapping({"/addQuestion"})
-    public List<Question> addQuestion(@RequestBody QuestionDto questionDto) {
-        _logger.info(" Called addQuestion, question : {}", questionDto);
-        Question savedQuestion = questionService.addQuestion(questionDto);
-
-        _logger.info("Saved Question : {}", savedQuestion);
-        return null;
-    }
-
 
     @PostMapping({"/addAllQuestions"})
     public void addAllQuestions(@RequestBody List<QuestionDto> questionDtoList) {
@@ -56,6 +45,15 @@ public class QuestionController {
         List<Question> questionList = questionService.getAllQuestions(questionsCriteria);
         System.out.println(questionList);
         return questionList;
+    }
+
+
+    @GetMapping("/getQuizGameQuestions")
+    public List<Question> getQuizGameQuestions() {
+        _logger.info("Called getQuizGameQuestions...");
+        List<Question> quizGameQuestionList = questionService.getQuizGameQuestions();
+        _logger.info("Called getQuizGameQuestions, questionDto : {}", quizGameQuestionList);
+        return quizGameQuestionList;
     }
 
 }

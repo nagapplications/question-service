@@ -18,4 +18,6 @@ public interface QuestionService {
 
 
     List<Question> addAllQuestions(List<QuestionDto> questionDtoList);
+
+    List<Question> getQuizGameQuestions();
 }

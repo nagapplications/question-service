@@ -1,9 +1,7 @@
 package com.techbeyondjava.questionservice.model;
 
-import com.fasterxml.jackson.annotation.JsonTypeId;
 import jakarta.persistence.*;
 import lombok.Data;
-import org.antlr.v4.runtime.misc.NotNull;
 
 import java.util.Date;
 
@@ -38,7 +36,8 @@ public class Question {
 
     @Column(name = "topic", nullable = false)
     private String topic;
-
+    @Transient
     private Date createdDate;
+    @Transient
     private Date modifiedDate;
 }

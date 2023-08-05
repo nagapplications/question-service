@@ -13,8 +13,14 @@ public interface QuestionDao extends JpaRepository<Question, Integer> {
     @Query(value = "SELECT q FROM Question q where q.topic=:topic order by RANDOM() LIMIT :noOfQuestions")
     List<Question> getQuestionsByTopic(String topic, int noOfQuestions);
 
-    @Query(value = "SELECT q FROM Question q where q.topic=:topic order by RANDOM() LIMIT 6")
-    List<Question> getQuizGameQuestions(String topic);
+    @Query(value = "SELECT q FROM Question q where q.difficultyLevel='easy' order by RAND() LIMIT 6" +
+                    " UNION " +
+                    "SELECT q FROM Question q where q.difficultyLevel='medium' order by RAND() LIMIT 6" +
+                    " UNION " +
+                    "SELECT q FROM Question q where q.difficultyLevel='hard' order by RAND() LIMIT 5" +
+                    " UNION " +
+                    "SELECT q FROM Question q where q.difficultyLevel='evil' order by RAND() LIMIT 2")
+    List<Question> getQuizGameQuestions();
 
 
 }

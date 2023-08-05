@@ -1,6 +1,5 @@
 package com.techbeyondjava.questionservice.service.impl;
 
-import com.techbeyondjava.questionservice.controller.QuestionController;
 import com.techbeyondjava.questionservice.dao.QuestionDao;
 import com.techbeyondjava.questionservice.dto.QuestionDto;
 import com.techbeyondjava.questionservice.dto.QuestionsCriteria;
@@ -12,7 +11,10 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.List;
 
 @Service
 public class QuestionServiceImpl implements QuestionService {
@@ -68,6 +70,11 @@ public class QuestionServiceImpl implements QuestionService {
         }
 
         return questionDao.saveAll(questionList);
+    }
+
+    @Override
+    public List<Question> getQuizGameQuestions() {
+        return questionDao.getQuizGameQuestions();
     }
 
     @Override
