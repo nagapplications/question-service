@@ -19,7 +19,7 @@ public class QuestionServiceImpl implements QuestionService {
         Question question = new Question();
         question.setQuestion("first question");
 
-        List<Question> questionList = questionDao.get
+        List<Question> questionList = questionDao.findAll();
         return Arrays.asList(question);
     }
 }
