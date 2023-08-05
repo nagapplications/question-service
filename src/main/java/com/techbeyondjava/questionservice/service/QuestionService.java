@@ -8,4 +8,6 @@ import java.util.List;
 
 public interface QuestionService {
     List<Question> getAllQuestions(QuestionDto questionDto);
+
+    List<Question> addQuestion(Question question);
 }
