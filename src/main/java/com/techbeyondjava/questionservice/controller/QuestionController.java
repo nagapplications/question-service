@@ -19,7 +19,7 @@ public class QuestionController {
     @Autowired
     QuestionService questionService;
 
-    @PostMapping({"/addAllQuestions"})
+    @PostMapping({"/addQuestion","/addAllQuestions"})
     public void addAllQuestions(@RequestBody List<QuestionDto> questionDtoList) {
         _logger.info("Called addAllQuestion, questionDtoList : {}", questionDtoList);
         List<Question> savedQuestionList = questionService.addAllQuestions(questionDtoList);
