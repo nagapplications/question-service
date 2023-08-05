@@ -1,0 +1,192 @@
+[
+  {
+    "question": "this is question 1 topic is GK difficulty Level is easy",
+    "option1": "option1",
+    "option2": "option2",
+    "option3": "option3",
+    "option4": "option4",
+    "difficultyLevel": "easy",
+    "rightAnswer": "option1",
+    "topic": "gk"
+  },
+  {
+    "question": "this is question 2 topic is sports difficulty Level is easy",
+    "option1": "option1",
+    "option2": "option2",
+    "option3": "option3",
+    "option4": "option4",
+    "difficultyLevel": "easy",
+    "rightAnswer": "option1",
+    "topic": "sports"
+  },
+  {
+    "question": "this is question 3 topic is technology difficulty Level is easy",
+    "option1": "option1",
+    "option2": "option2",
+    "option3": "option3",
+    "option4": "option4",
+    "difficultyLevel": "easy",
+    "rightAnswer": "option1",
+    "topic": "technology"
+  },
+  {
+    "question": "this is question 4 topic is history difficulty Level is easy",
+    "option1": "option1",
+    "option2": "option2",
+    "option3": "option3",
+    "option4": "option4",
+    "difficultyLevel": "easy",
+    "rightAnswer": "option1",
+    "topic": "history"
+  },
+  {
+    "question": "this is question 5 topic is GK difficulty Level is easy",
+    "option1": "option1",
+    "option2": "option2",
+    "option3": "option3",
+    "option4": "option4",
+    "difficultyLevel": "easy",
+    "rightAnswer": "option1",
+    "topic": "gk"
+  },
+  {
+    "question": "this is question 6 topic is sports difficulty Level is easy",
+    "option1": "option1",
+    "option2": "option2",
+    "option3": "option3",
+    "option4": "option4",
+    "difficultyLevel": "easy",
+    "rightAnswer": "option1",
+    "topic": "sports"
+  },
+  {
+    "question": "this is question 7 topic is GK difficulty Level is medium",
+    "option1": "option1",
+    "option2": "option2",
+    "option3": "option3",
+    "option4": "option4",
+    "difficultyLevel": "medium",
+    "rightAnswer": "option1",
+    "topic": "gk"
+  },
+  {
+    "question": "this is question 8 topic is sports difficulty Level is medium",
+    "option1": "option1",
+    "option2": "option2",
+    "option3": "option3",
+    "option4": "option4",
+    "difficultyLevel": "medium",
+    "rightAnswer": "option1",
+    "topic": "sports"
+  },
+  {
+    "question": "this is question 9 topic is history difficulty Level is medium",
+    "option1": "option1",
+    "option2": "option2",
+    "option3": "option3",
+    "option4": "option4",
+    "difficultyLevel": "medium",
+    "rightAnswer": "option1",
+    "topic": "history"
+  },
+  {
+    "question": "this is question 10 topic is technology difficulty Level is medium",
+    "option1": "option1",
+    "option2": "option2",
+    "option3": "option3",
+    "option4": "option4",
+    "difficultyLevel": "medium",
+    "rightAnswer": "option1",
+    "topic": "technology"
+  },
+  {
+    "question": "this is question 11 topic is GK difficulty Level is medium",
+    "option1": "option1",
+    "option2": "option2",
+    "option3": "option3",
+    "option4": "option4",
+    "difficultyLevel": "medium",
+    "rightAnswer": "option1",
+    "topic": "gk"
+  },
+  {
+    "question": "this is question 12 topic is sports difficulty Level is medium",
+    "option1": "option1",
+    "option2": "option2",
+    "option3": "option3",
+    "option4": "option4",
+    "difficultyLevel": "medium",
+    "rightAnswer": "option1",
+    "topic": "sports"
+  },
+  {
+    "question": "this is question 13 topic is GK difficulty Level is hard",
+    "option1": "option1",
+    "option2": "option2",
+    "option3": "option3",
+    "option4": "option4",
+    "difficultyLevel": "hard",
+    "rightAnswer": "option1",
+    "topic": "gk"
+  },
+  {
+    "question": "this is question 14 topic is sports difficulty Level is hard",
+    "option1": "option1",
+    "option2": "option2",
+    "option3": "option3",
+    "option4": "option4",
+    "difficultyLevel": "hard",
+    "rightAnswer": "option1",
+    "topic": "sports"
+  },
+  {
+    "question": "this is question 15 topic is history difficulty Level is hard",
+    "option1": "option1",
+    "option2": "option2",
+    "option3": "option3",
+    "option4": "option4",
+    "difficultyLevel": "hard",
+    "rightAnswer": "option1",
+    "topic": "history"
+  },
+  {
+    "question": "this is question 16 topic is technology difficulty Level is hard",
+    "option1": "option1",
+    "option2": "option2",
+    "option3": "option3",
+    "option4": "option4",
+    "difficultyLevel": "hard",
+    "rightAnswer": "option1",
+    "topic": "technology"
+  },
+  {
+    "question": "this is question 17 topic is GK difficulty Level is hard",
+    "option1": "option1",
+    "option2": "option2",
+    "option3": "option3",
+    "option4": "option4",
+    "difficultyLevel": "hard",
+    "rightAnswer": "option1",
+    "topic": "gk"
+  },
+  {
+    "question": "this is question 18 topic is GK difficulty Level is evil",
+    "option1": "option1",
+    "option2": "option2",
+    "option3": "option3",
+    "option4": "option4",
+    "difficultyLevel": "evil",
+    "rightAnswer": "option1",
+    "topic": "gk"
+  },
+  {
+    "question": "this is question 19 topic is technology difficulty Level is evil",
+    "option1": "option1",
+    "option2": "option2",
+    "option3": "option3",
+    "option4": "option4",
+    "difficultyLevel": "evil",
+    "rightAnswer": "option1",
+    "topic": "technology"
+  }
+]
