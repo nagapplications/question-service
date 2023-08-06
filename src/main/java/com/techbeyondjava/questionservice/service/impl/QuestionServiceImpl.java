@@ -12,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -27,11 +26,7 @@ public class QuestionServiceImpl implements QuestionService {
     @Override
     public List<Question> getAllQuestions(QuestionsCriteria questionsCriteria) {
         _logger.info("Called getAllQuestions...");
-        Question question = new Question();
-        question.setQuestion("first question");
-
-        List<Question> questionList = questionDao.findAll();
-        return Arrays.asList(question);
+        return questionDao.findAll();
     }
 
     @Override

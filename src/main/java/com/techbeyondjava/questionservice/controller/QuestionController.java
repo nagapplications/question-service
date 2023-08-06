@@ -39,16 +39,15 @@ public class QuestionController {
         return null;
     }
 
-    @GetMapping("/getQuestions")
+    @PostMapping("/getQuestions")
     public List<Question> getAllQuestions(@RequestBody QuestionsCriteria questionsCriteria) {
-        _logger.info("Called getAllQuestions, questionDto : {}", questionsCriteria);
+        _logger.info("Called getAllQuestions, questionsCriteria : {}", questionsCriteria);
         List<Question> questionList = questionService.getAllQuestions(questionsCriteria);
         System.out.println(questionList);
         return questionList;
     }
 
-
-    @GetMapping("/getQuizGameQuestions")
+    @PostMapping("/getQuizGameQuestions")
     public List<Question> getQuizGameQuestions() {
         _logger.info("Called getQuizGameQuestions...");
         List<Question> quizGameQuestionList = questionService.getQuizGameQuestions();
