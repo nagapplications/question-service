@@ -27,11 +27,7 @@ public class QuestionServiceImpl implements QuestionService {
     @Override
     public List<Question> getAllQuestions(QuestionsCriteria questionsCriteria) {
         _logger.info("Called getAllQuestions...");
-        if (StringUtils.hasText(questionsCriteria.getDifficultyLevel()) && StringUtils.hasText(questionsCriteria.getTopic())) {
-            return questionDao.findByTopicAndDifficultyLevel(questionsCriteria.getTopic(), questionsCriteria.getDifficultyLevel(), questionsCriteria.getNoOfQuestions());
-        } else {
-            return questionDao.getStandardModeQuestions(questionsCriteria.getTopic(), questionsCriteria.getDifficultyLevel(), questionsCriteria.getNoOfQuestions());
-        }
+        return questionDao.getStandardModeQuestions(questionsCriteria.getTopic(), questionsCriteria.getDifficultyLevel(), questionsCriteria.getNoOfQuestions());
     }
 
     @Override

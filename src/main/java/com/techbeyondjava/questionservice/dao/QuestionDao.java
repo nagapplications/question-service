@@ -10,13 +10,8 @@ import java.util.List;
 @Repository
 public interface QuestionDao extends JpaRepository<Question, Integer> {
 
-
     @Query(value = "SELECT q FROM Question q where (:topic is null or q.topic=:topic) and (:difficultyLevel is null or q.difficultyLevel=:difficultyLevel) order by RAND() LIMIT :noOfQuestions")
     List<Question> getStandardModeQuestions(String topic, String difficultyLevel, Integer noOfQuestions);
-
-    @Query(value = "SELECT q FROM Question q where q.topic=:topic and q.difficultyLevel=:difficultyLevel order by RAND() LIMIT :noOfQuestions")
-    List<Question> findByTopicAndDifficultyLevel(String topic, String difficultyLevel, Integer noOfQuestions);
-
 
     @Query(value = "SELECT q FROM Question q where q.difficultyLevel='easy' order by RAND() LIMIT 6" +
                     " UNION " +
