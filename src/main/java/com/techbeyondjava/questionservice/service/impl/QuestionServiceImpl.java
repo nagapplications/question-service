@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -26,7 +27,11 @@ public class QuestionServiceImpl implements QuestionService {
     @Override
     public List<Question> getAllQuestions(QuestionsCriteria questionsCriteria) {
         _logger.info("Called getAllQuestions...");
-        return questionDao.findAll();
+        if (StringUtils.hasText(questionsCriteria.getDifficultyLevel()) && StringUtils.hasText(questionsCriteria.getTopic())) {
+            return questionDao.findByTopicAndDifficultyLevel(questionsCriteria.getTopic(), questionsCriteria.getDifficultyLevel(), questionsCriteria.getNoOfQuestions());
+        } else {
+            return questionDao.getStandardModeQuestions(questionsCriteria.getTopic(), questionsCriteria.getDifficultyLevel(), questionsCriteria.getNoOfQuestions());
+        }
     }
 
     @Override
