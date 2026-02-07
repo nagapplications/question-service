@@ -1,5 +1,5 @@
 pipeline {
-   // agent any
+   agent any
     //environment {
         // Set the MySQL client path in the environment
       //  PATH = "/opt/homebrew/Cellar/mysql-client/9.2.0/bin:$PATH"
